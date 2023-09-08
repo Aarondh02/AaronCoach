@@ -1,0 +1,116 @@
+/* Agrega margen superior al carrusel para separarlo de la barra de navegación */
+#carouselAaron {
+    margin-top: 50px; /* Ajusta este valor según tu preferencia */
+}
+
+/* Estilo adicional para la barra de navegación */
+.navbar {
+    margin-bottom: 20px; /* Agrega margen inferior a la barra de navegación */
+}
+body {
+    background-color: rgb(253, 250, 250);
+  }
+  
+  .container {
+    width: 1200px !important;
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      max-width: 1279px !important;
+      padding: 0 !important;
+      margin: 0 80px !important;
+      width: auto !important;
+    }
+  
+    @media screen and (max-width: 991px) {
+      max-width: 959px !important;
+      margin: 0 16px !important;
+      padding: 0 !important;
+      width: auto !important;
+    }
+  }
+  
+  .gradient-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 30px;
+  
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .container-title {
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #000; /* Cambio de color de texto a negro */
+    font-weight: 600;
+    line-height: 60px;
+  }
+  
+  .card {
+    max-width: 550px;
+    border: 2px solid #000; /* Añadir un borde y cambiar su color a negro */
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  .container-card {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #fefdfe, #fefdfe, #fefdfe);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+  
+    img {
+      margin-bottom: 32px;
+    }
+  }
+  
+  /* Estilos para las cajas de colores */
+  .bg-green-box,
+  .bg-white-box,
+  .bg-yellow-box,
+  .bg-blue-box {
+    position: relative;
+  }
+  
+  .bg-green-box::after,
+  .bg-white-box::after,
+  .bg-yellow-box::after,
+  .bg-blue-box::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+    border: 2px solid #000; /* Añadir un borde y cambiar su color a negro */
+  }
+  
+  /* Cambiar el color del texto en las cajas de colores a negro */
+  .card-title {
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+  
+  .card-description {
+    font-weight: 600;
+    line-height: 32px;
+    color: hsla(0, 0%, 0%, 0.5); /* Cambiar el color del texto a negro con opacidad */
+    font-size: 16px;
+    max-width: 470px;
+  }
