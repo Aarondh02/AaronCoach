@@ -1,1 +1,376 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  position: relative;
+}
 
+/* Agrega margen superior al carrusel para separarlo de la barra de navegación */
+#carouselAaron {
+  margin-top: 50px;
+  /* Ajusta este valor según tu preferencia */
+}
+
+/* Estilo adicional para la barra de navegación */
+.navbar {
+  margin-bottom: 20px;
+  /* Agrega margen inferior a la barra de navegación */
+}
+
+/* Contenedor principal del encabezado */
+.header-container {
+  position: relative;
+  margin-top: 120px;
+}
+
+/* Sección superior del encabezado */
+.top-section {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Imagen en la sección superior del encabezado */
+.top-section img {
+  width: 100px;
+  height: auto;
+}
+
+/* Estilos para el carrusel */
+/* Comienza el carrusel */
+
+.carousel-item {
+  height: 85vh; /* Establece la altura del elemento del carrusel al 85% de la altura de la ventana */
+  flex-direction: column; /* Establece la dirección de flexión como columna para alinear elementos verticalmente */
+  justify-content: center; /* Centra verticalmente el contenido en el carrusel */
+  align-items: center; /* Centra horizontalmente el contenido en el carrusel */
+  position: relative; /* Agrega posicionamiento relativo para posicionar elementos secundarios de manera relativa */
+  margin-bottom: 20px; /* Agrega margen inferior para separar las diapositivas del carrusel */
+}
+
+/* Contenedor del contenido del carrusel */
+.carousel-content {
+  position: relative; /* Agrega posicionamiento relativo al contenido del carrusel */
+  width: 100%; /* Establece el ancho al 100% del contenedor */
+  height: 100%; /* Establece la altura al 100% del contenedor */
+  overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+}
+
+/* Imágenes dentro del carrusel */
+.carousel-content img {
+  object-fit: cover; /* Escala y recorta la imagen para llenar el contenedor */
+  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+}
+
+/* Etiqueta de la diapositiva dentro del carrusel */
+.carousel-caption {
+  position: absolute; /* Agrega posicionamiento absoluto para superponer el texto en las imágenes */
+  bottom: 0; /* Coloca el texto en la parte inferior del carrusel */
+  left: 0; /* Coloca el texto en el borde izquierdo del carrusel */
+  right: 0; /* Coloca el texto en el borde derecho del carrusel */
+  padding: 20px; /* Agrega relleno alrededor del texto */
+  background-color: rgba(0, 0, 0, 0.7); /* Establece un fondo semitransparente en negro */
+  color: white; /* Establece el color del texto en blanco */
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Establece la dirección de flexión como columna */
+  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: center; /* Centra verticalmente el contenido */
+  width: 100%; /* Establece el ancho al 100% del contenedor */
+  height: 100%; /* Establece la altura al 100% del contenedor */
+  text-align: left; /* Alinea el texto a la izquierda horizontalmente */
+}
+
+/* Contenedor de planes */
+.plan-container {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 50px; /* Agrega margen superior para separar el contenedor de planes */
+  background-color: white; /* Establece el color de fondo del contenedor de planes */
+  z-index: 1; /* Establece la posición en el eje Z para superponer el contenido */
+  padding: 20px; /* Agrega relleno alrededor del contenido */
+}
+
+/* Estilos para el texto dentro de las diapositivas del carrusel */
+.carousel-caption * {
+  color: white; /* Establece el color del texto en blanco */
+  font-size: 24px; /* Cambia el tamaño de la fuente según tu preferencia */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Cambia la fuente a Arial o la que prefieras */
+  line-height: 1.5; /* Ajusta el espacio entre líneas para una mejor legibilidad */
+  margin-bottom: 10px; /* Aumenta el espacio entre párrafos para una mejor separación */
+}
+
+/* Enlaces no decorados */
+ul li a {
+  text-decoration: none; /* Elimina la decoración de los enlaces */
+}
+
+
+/*Start tarjetas para los planes*/
+/* Estilos para las tarjetas */
+/* Estilos para las tarjetas */
+.card {
+  max-width: 500px; /* Establece el ancho máximo de la tarjeta */
+  margin: 0 auto; /* Centra horizontalmente las tarjetas en el contenedor */
+  padding: 50px; /* Añade espacio interior a la tarjeta */
+  background-color: #FFFFFF; /* Establece el color de fondo de la tarjeta */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a la tarjeta */
+  text-align: center; /* Centra el texto dentro de la tarjeta */
+  margin-bottom: 20px; /* Agrega margen entre las tarjetas (arriba, derecha, abajo, izquierda) */
+  position: relative; /* Agrega posicionamiento relativo */
+  border: 2px solid green; /* Agrega un borde de 2px de ancho y color verde */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Estilos para el botón en las tarjetas */
+.plan-button {
+  position: absolute; /* Agrega posicionamiento absoluto para el botón */
+  bottom: 0px; /* Ajusta la distancia desde abajo según tu preferencia */
+  right: 10px; /* Ajusta la distancia desde la derecha según tu preferencia */
+}
+
+/* Estilos para los botones personalizados */
+.custom-button {
+  text-decoration: none; /* Elimina el subrayado predeterminado en el enlace */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+  background: rgb(41, 39, 39); /* Establece el color de fondo del botón */
+  color: #ffffff; /* Establece el color del texto del botón */
+  font-size: 1em; /* Establece el tamaño de fuente del botón */
+  padding: 1em 2em; /* Añade relleno al botón (arriba/abajo izquierda/derecha) */
+  border-radius: 10000px; /* Agrega bordes redondeados al botón */
+  position: relative; /* Agrega posicionamiento relativo */
+  z-index: 1; /* Añade un índice z para que esté por encima de la tarjeta */
+  transition: all 0.5s; /* Agrega una transición suave de 0.5 segundos en los cambios de estilo */
+}
+
+/* Icono después del botón personalizado */
+.custom-button::after {
+  font-family: "FontAwesome"; /* Utiliza la fuente FontAwesome para los iconos */
+  content: "\f0da"; /* Agrega el icono específico (puedes cambiarlo según tus necesidades) */
+  position: absolute; /* Agrega posicionamiento absoluto para el icono */
+  left: 85%; /* Ajusta la posición izquierda del icono */
+  top: 31%; /* Ajusta la posición superior del icono */
+  right: 5%; /* Ajusta la posición derecha del icono */
+}
+
+/* Estilos al pasar el cursor sobre el botón personalizado */
+.custom-button:hover {
+  background: #2b2bff; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+  border-radius: 10000px; /* Mantiene los bordes redondeados al pasar el mouse */
+  box-shadow: 0px 6px 15px #0000ff61; /* Agrega una sombra al pasar el mouse sobre el botón */
+  padding: 1.5rem 3.5rem 1.5rem 1.5rem; /* Ajusta el relleno al pasar el mouse sobre el botón */
+  transition: all 0.5s; /* Agrega una transición suave de 0.5 segundos en los cambios de estilo */
+}
+
+/* Icono después del botón personalizado al pasar el cursor */
+.custom-button:hover::after {
+  opacity: 1; /* Hace que el icono sea completamente visible al pasar el mouse sobre el botón */
+  transition: all 0.5s; /* Agrega una transición suave de 0.5 segundos en la visibilidad del icono */
+}
+/*End tarjeta para los planes*/
+
+/* Estilos para el texto adicional */
+.additional-text {
+  color: black;
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Lista de puntos */
+.points-list {
+  text-align: center;
+  /* Centrar los puntos */
+  font-size: 20px;
+  margin-top: 0;
+  /* Ajustar el margen superior */
+  margin-bottom: 30px;
+  /* Agregar margen inferior */
+  padding-inline-start: 0;
+  /* Eliminar el padding del ul */
+}
+
+/* Comienza el timeline */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+/* Contenedor de la sección de diseño */
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  /* Cambiar el fondo a blanco */
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+/* Contenedor de diseño */
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor de la línea de tiempo */
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenido de la línea de tiempo */
+.timeline-content {
+  padding: 20px;
+  background: white;
+  /* Cambiar el fondo a blanco */
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  border-radius: 5px;
+  color: black;
+  /* Cambiar el texto a negro */
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Componente de la línea de tiempo */
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    width: 3px;
+    height: 100%;
+  }
+
+  .main-middle {
+    opacity: 0;
+  }
+
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+/* Fin del timeline */
+
+/* Estilos para la lista de puntos */
+.points-list li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+/* Contenedor del texto deslizable */
+.slide-container {
+  position: relative;
+}
+
+/* Texto deslizable en la diapositiva */
+.slide-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+}
+
+/* Estilos para los enlaces a redes sociales */
+#socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialMedia ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  /* Espacio entre los íconos */
+}
+
+#socialMedia ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+}
+
+#socialMedia ul li a .fa-brands {
+  font-size: 5em;
+  color: #8a8a8a;
+}
+
+#socialMedia ul li a::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+#socialMedia ul li:nth-child(1) a::before {
+  content: "\f16d";
+  background-image: linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 4px solid #dc2743;
+}
+
+#socialMedia ul li:nth-child(2) a::before {
+  content: "\f232";
+  color: #25d366;
+  border-bottom: 4px solid #25d366;
+}
+
+#socialMedia ul li:nth-child(3) a::before {
+  content: "\f0e1";
+  color: #1da1f2;
+  border-bottom: 4px solid #1da1f2;
+}
+
+#socialMedia ul li:hover a::before {
+  top: -20px;
+  height: 130%;
+}
