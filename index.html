@@ -25,9 +25,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#plan-container">Planes</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="planesDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Planes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="planesDropdown">
+                          <a class="dropdown-item" href="plan-basico.html">Plan Básico</a>
+                          <a class="dropdown-item" href="plan-premium.html">Plan Premium</a>
+                          <a class="dropdown-item" href="plan-pro.html">Plan Pro</a>
+                        </div>
+                      </li>                      
                     <li class="nav-item">
                         <a class="nav-link" href="#">¿Qué incluyen?</a>
                         <!-- Cambio de "Acerca de" a "¿Qué incluyen?" -->
@@ -56,11 +64,10 @@
                         alt="Titulo foto" class="d-block w-100" />
                     <div class="carousel-caption d-md-block">
                         <h3>COACH AARÓN</h3>
-                        <p class="custom-text">ENTRENA CONMIGO</p>
                         <div class="text-group">
-                            <p class="custom-text">CONSIGUE TU PLAN</p>
-                            <p class="custom-text">ENTRENAMIENTO Y NUTRICIÓN</p>
-                            <p class="custom-text">PERSONALIZADOS</p>
+                            <p class="custom-text">Consigue tus objetivos</p>
+                            <p class="custom-text">a través de tu plan de entrenamiento</p>
+                            <p class="custom-text">y nutrición personalizados</p>
                         </div>
                         <a href="#plan-container" class="custom-button">COMENZAR</a>
                     </div>
@@ -101,15 +108,27 @@
         </div>
     </div>
     </div>
-    <div class="plan-container" id="plan-container">
-        <div class="plan-button-group">
-            <a href="plan-basico.html" class="custom-button">Plan Básico</a>
+    <div class="card" id="plan-basico" style="background-image: url('images/images (1).jpeg');">
+        <h2>PLAN BÁSICO</h2>
+        <p>Consigue tu programa de entrenamiento personalizado</p>
+        <div class="plan-button">
+            <a href="plan-basico.html" class="custom-button">Ver Detalles</a>
         </div>
-        <div class="plan-button-group" style="margin-top: 50px;">
-            <a href="plan-premium.html" class="custom-button">Plan Premium</a>
+    </div>
+
+    <div class="card" id="plan-premium" style="background-image: url('images/images (1).jpeg');">
+        <h2>PLAN PREMIUM</h2>
+        <p>Consigue tu programa de entrenamiento y nutrición personalizados</p>
+        <div class="plan-button">
+            <a href="plan-premium.html" class="custom-button">Ver Detalles</a>
         </div>
-        <div class="plan-button-group" style="margin-top: 50px;">
-            <a href="plan-pro.html" class="custom-button">Plan Pro</a>
+    </div>
+
+    <div class="card" id="plan-pro" style="background-image: url('images/images (1).jpeg');">
+        <h2>PLAN PRO</h2>
+        <p>Plan específico para iniciación en el físico-culturismo</p>
+        <div class="plan-button">
+            <a href="plan-pro.html" class="custom-button">Ver Detalles</a>
         </div>
     </div>
 
@@ -372,6 +391,9 @@ here for that pointer in timeline.-->
     <!-- Footer -->
     <!-- Incluye la librería de Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
